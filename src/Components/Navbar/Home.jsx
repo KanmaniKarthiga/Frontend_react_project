@@ -10,7 +10,7 @@ function Home(){
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
-        <>
+        <div id="home">
             <div className='homecompo1'>
                 <img src='https://i.ytimg.com/vi/8cmvN_4Ehj4/maxresdefault.jpg' alt='bollywood' id='homeimg1'/>
                 <img src='https://static5.depositphotos.com/1005629/533/i/600/depositphotos_5338696-stock-photo-panna-cotta.jpg' alt='food' id='homeimg2'/>
@@ -64,8 +64,8 @@ function Home(){
             </div>
             
             <div id="homeBlock">
-                <div className="homeTop-posts">Top Posts</div>
-                <div><hr id="hrhead"/></div>
+                <h2 className="homeTop-posts">Top Posts</h2>
+                <div><hr id="hrhead_home"/></div>
                     {TopData.filter((item) => item.category === 'ToppostsHome').map((data,index)=>{
                         return(
                             <>
@@ -85,10 +85,11 @@ function Home(){
                             </>
                             )
                         })}
-                        
-                
             </div>
-        </>
+            <div>
+                <img src="https://webbtelescope.org/files/live/sites/webb/files/home/news/first-images/gallery/_images/STScI-J-HeroERO-Gallery-Fallback-image-1920x1080.jpg?t=tn370" alt="not found" id="ho_img"/>
+            </div>
+        </div>
     )
 }
 export default Home;

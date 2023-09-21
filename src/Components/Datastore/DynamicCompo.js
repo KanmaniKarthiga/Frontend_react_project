@@ -14,6 +14,7 @@ const DynamicCompo = () =>{
     const [data] = useContext(Store)
     const id = useParams().id
     console.log(typeof id)
+   
     const navi = useNavigate()
 
     const navbar = document.getElementById('Header')
@@ -34,7 +35,7 @@ const DynamicCompo = () =>{
                 <>
                 <div id="dynamic_header">
                     <div id="dynamic_siren">
-                        <Link to='/' style={{color:"white", textDecoration:"none"}}>
+                        <Link to='/' style={{color:"white", textDecoration:"none",}} onClick={handleclick} >
                         <span id='the'>The</span> 
                         <span id='siren'>Siren</span>
                         </Link>
@@ -88,6 +89,31 @@ const DynamicCompo = () =>{
                 
             )
         })}
+        <div className="story">
+    
+        {data.filter((item) => Math.random(item.id % 3 === 0)).slice(0,3).map((item,index) =>{
+            return(
+                <>
+                <div className="more_siren">                   
+                    <img src={item.image} alt="not found" className="story_img"/>
+                    <div id="siren_story">
+                        <h1 className="story_head">{item.heading}</h1>
+                    </div>
+                    <div style={{display: "flex", marginTop:"5px"}}>
+                        <div>
+                            <img src={profile} alt="not found" style={{width: "60px", height:"60px"}}/>
+                        </div>
+                        <div id="pro_user" style={{marginTop:"3px", marginLeft:"5px"}}>
+                            <p style={{fontWeight:"bold"}}>Kanmani Karthiga</p>
+                            <p>Aug 28, 2023 10min read</p> 
+                        </div>
+                    </div>
+                </div>
+                </>
+            )
+        })}
+        </div>
+        
         </>
     )
 }

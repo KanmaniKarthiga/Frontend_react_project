@@ -126,6 +126,24 @@ hr{
 #homeBlock{
   width: 45%;
   margin-left: 50%;
+  margin-top: -220px;
+}
+.homeTop-posts{
+  margin-left: 30%;
+  font-weight: bold;
+}
+#hrhead_home{
+  margin-top: 2px;
+  margin-left: 30%;
+  width: 80px;
+  background-color: rgb(240, 107, 107);
+}
+#ho_img{
+  position: relative;
+  top: -305px;
+  left: 12.5%;
+  width: 580px;
+  height: 300px;
 }
 #latestArticles{
   display: flex;
@@ -375,6 +393,7 @@ hr{
   top: 50%;
   left: 8%;
   gap: 10px;
+  z-index: -10;
 }
 .dynamic_span{
   position: relative;
@@ -391,11 +410,30 @@ hr{
   text-decoration: none;
   color: black;
 }
-.more_siren{
+.story{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  background-color: gainsboro;
 }
-
+.more_siren{
+  display: block;
+  width: 30%;
+  margin-top: 20px;
+  line-height: 25px;
+  margin-left: 70px;
+}
+.story_head{
+  font-size: 15px;
+  font-weight: bold;
+}
+.story_img{
+  width: 300px;
+  height: 200px;
+  
+}
+#siren_story{
+  width: 80%;
+}
 #footer{
   background-image: url("https://i0.wp.com/vincenttechblog.com/wp-content/uploads/2018/11/footer-background.jpg?ssl=1");
   display: flex;
@@ -438,5 +476,9 @@ li{
 
 /* ############################ */
 @media (min-width : 300px) and (max-width : 500px){
-
+  #home{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }

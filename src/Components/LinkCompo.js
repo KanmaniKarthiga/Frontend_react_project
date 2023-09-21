@@ -22,5 +22,6 @@ const LinkCompo = () =>{
         </div>
        
     )
+    
 }
 export default LinkCompo;
