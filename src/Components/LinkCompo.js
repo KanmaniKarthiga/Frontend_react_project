@@ -19,7 +19,7 @@ const LinkCompo = () =>{
                 <Link to="/Technology" activeclassname="active" className="links navlink">Technology</Link>
                 <Link to="/Hollywood" activeclassname="active" className="links navlink">Hollywood</Link>
                 <Link to="/Fitness" activeclassname="active" className="links navlink">Fitness</Link>
-                <Link to="/Food" activeclassname="active" className="links">Food</Link>
+                <Link to="/Food" activeclassname="active" className="links navlink">Food</Link>
             </div>
             <button className='mobile-menu-icon' onClick={()=>{setIsMobile(!isMobile)}}>
                 {isMobile ? <RxCross2/> : <GiHamburgerMenu/>  }
