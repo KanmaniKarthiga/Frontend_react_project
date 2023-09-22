@@ -14,11 +14,11 @@ const LinkCompo = () =>{
             </div>
             
             <div className={isMobile ? "nav" : "navbar" } onClick={()=>{setIsMobile(false)}}>
-                <Link to="/" activeclassname="active" className="links">Home</Link>
-                <Link to="/Bollywood" activeclassname="active" className="links">Bollywood</Link>
-                <Link to="/Technology" activeclassname="active" className="links">Technology</Link>
-                <Link to="/Hollywood" activeclassname="active" className="links">Hollywood</Link>
-                <Link to="/Fitness" activeclassname="active" className="links">Fitness</Link>
+                <Link to="/" activeclassname="active" className="links navlink">Home</Link>
+                <Link to="/Bollywood" activeclassname="active" className="links navlink">Bollywood</Link>
+                <Link to="/Technology" activeclassname="active" className="links navlink">Technology</Link>
+                <Link to="/Hollywood" activeclassname="active" className="links navlink">Hollywood</Link>
+                <Link to="/Fitness" activeclassname="active" className="links navlink">Fitness</Link>
                 <Link to="/Food" activeclassname="active" className="links">Food</Link>
             </div>
             <button className='mobile-menu-icon' onClick={()=>{setIsMobile(!isMobile)}}>
