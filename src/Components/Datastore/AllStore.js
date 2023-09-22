@@ -368,15 +368,15 @@ function AllStore(){
             content:"The Kindle Scribe is one of the best eReader devices you can buy. It uses the E Ink display technology to create a reader you can draw and write on, much like you would with a tablet (or a pen and paper, if that's your thing).Our Kindle Scribe review called out several major positives, including its big sharp display, the natural feel and sound of handwriting, long battery life, and the fact that it comes with a stylus by default. 'From a hardware and feature perspective, it's well made, it's got enough features to make it genuinely useful and the fact it has a sharp screen with front lighting and a pen included as standard makes it comparatively good value for money. Plus, you get access to Amazon's massive library of content, which can never be overlooked,' said our review.",
             category:"TSide",
         },
-        {
-            id:46,
-            image:"https://noticiasetecnologia.com/wp-content/uploads/2023/06/telefones-na-mao-1140x641.jpg",
-            heading:"BBK's OnePlus, Oppo, Realme Becoming Separate Brands",
-            description:"China's tech behemoth BBK Electronics has decided to make handset makers OnePlus, Oppo and Realme separate entities in India, in an attempt to de-risk its India business.",
-            content:"China's tech behemoth BBK Electronics has decided to make handset makers OnePlus, Oppo and Realme separate entities in India, in an attempt to de-risk its India business, says a report by Economic Times. The three smartphone OEMs will have sales accounted for in their own books. Previously, Oppo Mobiles India was handling the distribution and sales of all three handset makers.The aim behind BBK Eletronics' move to separate the three businesses is to de-risk from the current and future government actions, the report added, citing three senior industry executives. Oppo and Vivo have been under the scanner of Indian tax authorities since last year over alleged tax issues. Vivo and iQoo are also owned by BBK Electronics through a separate entity Vivo Mobile India. ",
-            category:"TSide",
+        // {
+        //     id:46,
+        //     image:"https://noticiasetecnologia.com/wp-content/uploads/2023/06/telefones-na-mao-1140x641.jpg",
+        //     heading:"BBK's OnePlus, Oppo, Realme Becoming Separate Brands",
+        //     description:"China's tech behemoth BBK Electronics has decided to make handset makers OnePlus, Oppo and Realme separate entities in India, in an attempt to de-risk its India business.",
+        //     content:"China's tech behemoth BBK Electronics has decided to make handset makers OnePlus, Oppo and Realme separate entities in India, in an attempt to de-risk its India business, says a report by Economic Times. The three smartphone OEMs will have sales accounted for in their own books. Previously, Oppo Mobiles India was handling the distribution and sales of all three handset makers.The aim behind BBK Eletronics' move to separate the three businesses is to de-risk from the current and future government actions, the report added, citing three senior industry executives. Oppo and Vivo have been under the scanner of Indian tax authorities since last year over alleged tax issues. Vivo and iQoo are also owned by BBK Electronics through a separate entity Vivo Mobile India. ",
+        //     category:"TSide",
 
-        },
+        // },
         {
             id:47,
             image:"https://img.etimg.com/thumb/msid-102440386,width-650,height-488,imgsize-2872767,,resizemode-75/big-tech-stocks.jpg",

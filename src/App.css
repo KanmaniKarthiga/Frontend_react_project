@@ -185,27 +185,27 @@ hr{
 #block3{
   position: relative;
   left: 69%;
-  top: -61.3em;
+  top: -150vh;
   width: 22%;
 }
 #block3T{
   position: relative;
   left: 69%;
-  top: -50em;
+  top: -105vh;
   width: 22%;
   
 }
 #block3F{
   position: relative;
   left: 69%;
-  top: -75em;
+  top: -180vh;
   width: 22%;
 }
 .componentH{
   max-height: 380vh;
 }
 .componentT{
-  max-height: 360vh;
+  max-height: 350vh;
 }
 .componentF{
   max-height: 420vh;
@@ -592,9 +592,20 @@ li{
   }
   #dynamic_siren{
     width: 180px;
+    margin-left: 5px;
+    background: none;
+  }
+  #the{
+    font-size: 18px;
+    color: black;
+  }
+  #siren{
+    font-size: 32px;
+    color: black;
   }
   #get_started{
     width: 150px;
+    margin-top: -2px;
   }
   .middle{
     display: flex;
