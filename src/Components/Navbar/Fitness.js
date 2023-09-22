@@ -53,6 +53,8 @@ function Fitness(){
                                 <NavLink to={`/Dynamiccompo/${data.id}`} className="linkStyle" onClick={handleclick}>
                                     <h3 className="highlightsCorner">{data.heading}</h3>
                                     <h4 className="contentCorner">{data.description}</h4>
+                                    <p id="time">Fitness / <span>August 25 2023</span></p>
+                                    
                                 </NavLink>
                                 </div>
                             </div>

@@ -51,6 +51,8 @@ function Food(){
                             <NavLink to={`/Dynamiccompo/${data.id}`} className="linkStyle" onClick={handleclick}>
                                 <h3 className="highlightsCorner">{data.heading}</h3><br/>
                                 <h4 className="contentCorner">{data.description}</h4>
+                                <p id="time">Food / <span>August 10 2023</span></p>
+                            
                             </NavLink>
                             </div>
                         </div>

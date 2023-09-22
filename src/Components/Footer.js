@@ -14,7 +14,7 @@ const FooterCompo = () =>{
     }
     return(
         <div id="footer">
-            <div style={{color:"white"}}>
+            <div style={{color:"white"}} className="media_siren">
                 <span id='the'>The</span> 
                 <span id='siren'>Siren</span>
                 <div>

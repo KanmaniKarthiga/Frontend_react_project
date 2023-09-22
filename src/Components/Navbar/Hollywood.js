@@ -11,7 +11,7 @@ function Hollywood(){
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
-        <div className="component">
+        <div className="componentH">
         <div id="baseContainer">
             <div id="block1">
                 <div className="header">Hollywood</div><hr id="hrhead"/>
@@ -54,6 +54,8 @@ function Hollywood(){
                                 <NavLink to={`/Dynamiccompo/${data.id}`} className="linkStyle" onClick={handleclick}>                      
                                     <h3 className="highlightsCorner">{data.heading}</h3>
                                     <h4 className="contentCorner">{data.description}</h4>
+                                    <p id="time">Hollywood / <span>August 2 2023</span></p>
+                                
                                 </NavLink>
                                 </div>
                             </div>

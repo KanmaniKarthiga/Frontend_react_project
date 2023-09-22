@@ -20,7 +20,8 @@ const DynamicCompo = () =>{
     const navbar = document.getElementById('Header')
     navbar.style.display = "none"
     
-
+    const dRouteData = data[id].category
+    console.log(dRouteData)
     const handleclick = () =>{
         
         window.scrollTo({top: 0, behavior: 'smooth'})   
@@ -29,10 +30,10 @@ const DynamicCompo = () =>{
     }
     
     return(
-        <>  
+        <div id="componentDyn">  
         {data.filter((item) => item.id === parseInt(id)).map((item,index)=>{
             return(
-                <>
+                <div key={index}>
                 <div id="dynamic_header">
                     <div id="dynamic_siren">
                         <Link to='/' style={{color:"white", textDecoration:"none",}} onClick={handleclick} >
@@ -58,10 +59,10 @@ const DynamicCompo = () =>{
                             <img src={youtube} alt="not found" className="icon"/>
                         </div>
                     </div>
-                    <div>
+                   
                         <img src={item.image} alt="not found" id="dynamic_img"/>
-                    </div>
-                    <p className="dynamic_content">{item.content}</p>
+                    
+                    <p className="dynamic_content detail">{item.content}</p>
                     <div className="Likes">
                         <div>
                             <img src={clapping} alt="not found" className="icon"/>
@@ -85,13 +86,13 @@ const DynamicCompo = () =>{
                     </div>
                 </div>
                 
-                </>
+                </div>
                 
             )
         })}
         <div className="story">
     
-        {data.filter((item) => Math.random(item.id % 3 === 0)).slice(0,3).map((item,index) =>{
+        {data.filter((item) => (item.category === dRouteData) && (item.id % 3 ===1 || item.id % 3 === 0)).map((item,index) =>{
             return(
                 <>
                 <div className="more_siren">                   
@@ -99,12 +100,12 @@ const DynamicCompo = () =>{
                     <div id="siren_story">
                         <h1 className="story_head">{item.heading}</h1>
                     </div>
-                    <div style={{display: "flex", marginTop:"5px"}}>
+                    <div id="media_story">
                         <div>
                             <img src={profile} alt="not found" style={{width: "60px", height:"60px"}}/>
                         </div>
-                        <div id="pro_user" style={{marginTop:"3px", marginLeft:"5px"}}>
-                            <p style={{fontWeight:"bold"}}>Kanmani Karthiga</p>
+                        <div id="media_user" style={{marginTop:"3px", marginLeft:"5px"}}>
+                            <p style={{fontWeight:"bold"}} >Kanmani Karthiga</p>
                             <p>Aug 28, 2023 10min read</p> 
                         </div>
                     </div>
@@ -114,7 +115,7 @@ const DynamicCompo = () =>{
         })}
         </div>
         
-        </>
+        </div>
     )
 }
 export default DynamicCompo;

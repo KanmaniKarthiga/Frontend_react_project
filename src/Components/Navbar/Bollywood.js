@@ -54,6 +54,8 @@ function Bollywood(){
                             <NavLink to={`/Dynamiccompo/${data.id}`} className="linkStyle" onClick={handleclick}>
                                 <h3 className="highlightsCorner">{data.heading}</h3>
                                 <h4 className="contentCorner">{data.description}</h4>
+                            <p id="time">Bollywood / <span>August 20 2023</span></p>
+
                             </NavLink>
                             </div>
                             

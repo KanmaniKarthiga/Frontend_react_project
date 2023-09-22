@@ -7,6 +7,9 @@
   text-align: center;
   margin-top: 20px;
 }
+.mobile-menu-icon{
+  display: none;
+}
 #the{
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
@@ -17,7 +20,7 @@
   font-size: 50px;
   font-weight: bold;
 }
-#navbar{
+.navbar{
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
@@ -40,6 +43,9 @@ hr{
   background-color: rgb(226, 226, 226);
   margin-left: 100px;
   border: none;
+}
+#home{
+  max-height: 350vh;
 }
 #homeimg1{
   position: relative;
@@ -194,6 +200,9 @@ hr{
   left: 69%;
   top: -75em;
   width: 22%;
+}
+.componentH{
+  max-height: 380vh;
 }
 .componentT{
   max-height: 360vh;
@@ -431,6 +440,10 @@ hr{
   height: 200px;
   
 }
+#media_story{
+  display: flex;
+  margin-top: 5px;
+}
 #siren_story{
   width: 80%;
 }
@@ -474,11 +487,242 @@ li{
 }
 
 
+
 /* ############################ */
 @media (min-width : 300px) and (max-width : 500px){
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .links{
+    color: black;
+    text-decoration: none;
+  }
+  .navbar{
+    display: none;
+  }
+  #Header{
+    width: 100vw;
+  }
+  .heading{
+    text-align: start;
+    margin-top: 30px;
+  }
+  .mobile-menu-icon{
+    display: block;
+    position: relative;
+    left: 80%;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    
+  }
   #home{
     display: flex;
     flex-direction: column;
+    max-height: 370vh;
   }
+  #baseContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+   
+  }
+  #block1{
+    margin-left: 0px;
+    width: 100vw;
+  }
+  #block2{
+    margin-left: 10px;
+    margin-top: -40px;
+    
+  }
+  .header{
+    font-size: 25px;
+  }
+  .imageCorner{
+    width: 250px;
+    height: 170px;
+  }
+  #block3, #block3T, #block3F{
+    display: none;
+  }
+  .componentF{
+    min-height: 450vh;
+  }
+  .componentH{
+    min-height: 450vh;
+  }
+  .component{
+    min-height: 400vh;
+  }
+  .componentFit{
+    min-height: 380vh;
+  }
+  .adbox{
+    display: none;
+  }
+  #footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 300vh;
+    width: 100vw;
+    font-size: 12px;
+    /* height: 20vh; */
+  }
+  .media_siren, #Header{
+    display: none;  
+  }
+
+  #dynamic_header{
+    width: 100vw;
+  }
+  #dynamic_siren{
+    width: 180px;
+  }
+  #get_started{
+    width: 150px;
+  }
+  .middle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+  }
+  #pro_user{
+    position: relative;
+    top: -130px;
+    left: 110px;
+  }
+  .social_media{
+    position: relative;
+    top: -315px;
+    left: -95px;
+  }
+  #componentDyn{
+    max-height: 100vh;
+  }
+  #dynamic_block{
+    width: 100vw;
+    position: relative;
+    left: 10px;
+
+  }
+  .dynamic_content{
+    width: 90vw;
+  }
+  .detail{
+    position: relative;
+    top: -140px;
+  }
+  #dynamic_img{
+    width: 90vw;
+    height: 300px;
+    position: relative;
+    top: -170px;
+  }
+  .bottom_profile{
+    position: relative;
+    top: -150px;
+    padding-bottom: 0px;
+    height: 120px;
+  }
+  .story{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  #media_story{
+    display: flex;
+    width: 90vw;
+  }
+  #siren_story{
+    width: 80vw;
+  }
+  .Likes{
+    position: absolute;
+    top: 90%;
+  }
+  .homecompo1{
+    display: flex;
+    flex-direction: column;
+  }
+  #homeimg1, #homeimg2, #homeimg3{
+    width: 90vw;
+    height: 200px;
+  }
+  #homeimg1{
+    position: relative;
+    top: 20px;
+    left: 10px;
+  }
+  #homeimg2{
+    position: relative;
+    top: 40px;
+    left: 10px;
+  }
+  #homeimg3{
+    position: relative;
+    top: 60px;
+    left: 10px;
+  }
+  #homecompo2{
+    position: relative;
+    top: 170px;
+  }
+  #homehr{
+    position: relative;
+    top: 175px;
+    margin-left: 10px;
+  }
+  .homelatest{
+    position: relative;
+    top: 170px;
+    align-items: center;
+   
+  }
+  #latest{
+    margin-left: 0px;
+  }
+  #latestArticles{
+    position: relative;
+    top: 200px;
+  }
+  #ArticleCompo{
+    position: relative;
+    top: 185px;
+    margin-left: 10px;
+  }
+  .containerHome{
+    margin-left: 10px;
+    width: 135vw;
+  }
+  #homeBlock{
+    position: relative;
+    top: 500px;
+    margin-left: 0px;
+  }
+  #ho_img{
+    position: relative;
+    top: 540px;
+    left: 10px;
+    width: 140vw;
+  }
+
+
+
   
+
 }

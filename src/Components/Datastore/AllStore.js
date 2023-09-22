@@ -755,7 +755,7 @@ function AllStore(){
                 <Routes>
                     <Route path='/' element={<Home/>}></Route>           
                     <Route path='/Bollywood' element={<Bollywood/>}></Route>
-                    <Route path='/Tech' element={<Tech/>}></Route>
+                    <Route path='/Technology' element={<Tech/>}></Route>
                     <Route path='/Hollywood' element={<Hollywood/>}></Route>
                     <Route path='/Fitness' element={<Fitness/>}></Route>
                     <Route path='/Food' element={<Food/>}></Route>
