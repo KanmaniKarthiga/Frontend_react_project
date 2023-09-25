@@ -412,6 +412,21 @@ hr{
   padding-left: 10px;
 
 }
+.componentH{
+  max-height: 420vh;
+}
+.component{
+  max-height: 400vh;
+}
+.componentT{
+  max-height: 350vh;
+}
+.componentFit{
+  max-height: 400vh;
+}
+.componentF{
+  max-height: 430vh;
+}
 .icon{
   width: 25px;
   height: 25px;
@@ -455,6 +470,7 @@ hr{
   justify-content: space-around;
   padding-top: 30px;
   padding-bottom: 20px;
+  
 }
 .footerlink{
   text-decoration: none;
@@ -753,8 +769,88 @@ li{
     display: none;
   }
 
+}
 
-
+/* ################# */
+@media (min-width: 500px) and (max-width: 800px){
+  #homeimg1{
+    position: relative;
+    top: 30px;
+    left: 5px;
+    width: 650px;
+    height: 420px;
+    border-radius: 5px;
+  }
+  #homeimg2{
+    position: relative;
+    top: -400px;
+    left: 700px;
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  #homeimg3{
+    position: relative;
+    top: -380px;
+    left: 700px;
+    width: 350px;
+    height: 210px;
+    border-radius: 5px;
+  }
+  #homecompo2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -80px;
+    margin-left: 174px;
+  }
+  #homeimg4{
+    height: 200px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 180px;
+  }
+  #latest{
+    display: flex;
+    flex-direction: row;
+  }
+  .containerHome{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .homelatest{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 174px;
+    margin-top: 20px;
+   }
+   #latestArticles{
+    width: 100%;
+   }
+   .homead{
+    display: none;
+   }
+  .imagehome{
+    width: 305px;
+    height: 170px;
+    box-shadow: 1px 1px 5px 0 gray;
+  }
+   #datacontainer{
+     margin-top: 10px;
+     width: 300px;
+     font-size: 15px;
+   }
+  #imagecontainer{
+   margin-top: 10px;
+  }
+  #homehr{
+    margin-left: 174px;
+    margin-top: 5px;
+    width: 5%;
+    background-color: rgb(240, 107, 107);
   
+  }
 
 }
