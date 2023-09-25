@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ############################# */
 .heading{
   text-align: center;
   margin-top: 20px;
@@ -10,6 +11,15 @@
 .mobile-menu-icon{
   display: none;
 }
+#menu_list{
+  display: none;
+ 
+}
+#menu_button{
+  display: none;
+ 
+}
+
 #the{
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
@@ -20,7 +30,7 @@
   font-size: 50px;
   font-weight: bold;
 }
-.navbar{
+#navbar{
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
@@ -37,6 +47,9 @@
 .navlink:hover{
   color: goldenrod;
 }
+.active{
+  color: goldenrod;
+}
 hr{
   width: 85%;
   height: 3px;
@@ -44,6 +57,7 @@ hr{
   margin-left: 100px;
   border: none;
 }
+/* #############################3 */
 #home{
   max-height: 350vh;
 }
@@ -154,20 +168,19 @@ hr{
 #latestArticles{
   display: flex;
 }
-.component{
-  max-height: 380vh;
-}
+/* ########################### */
+
 #baseContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 60px;
-  
 }
+
 #block1{
   display: flex;
   flex-direction: column;
-  width: 150%;
+  width: 100%;
   margin-left: 130px;
   margin-top: 20px;
   font-size: 15px;
@@ -201,18 +214,7 @@ hr{
   top: -180vh;
   width: 22%;
 }
-.componentH{
-  max-height: 380vh;
-}
-.componentT{
-  max-height: 350vh;
-}
-.componentF{
-  max-height: 420vh;
-}
-.componentFit{
-  max-height: 358vh;
-}
+
 .container1{
   display: flex;
   flex-direction: row;
@@ -490,43 +492,46 @@ li{
 
 /* ############################ */
 @media (min-width : 300px) and (max-width : 500px){
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-  }
-  .links{
-    color: black;
-    text-decoration: none;
-  }
-  .navbar{
+  #navbar{
     display: none;
   }
   #Header{
-    width: 100vw;
+    width: 90%;
+    display: block;
   }
   .heading{
     text-align: start;
     margin-top: 30px;
+    margin-left: 10px;
+    
+  }
+  #menu_list{
+    display: block;
   }
   .mobile-menu-icon{
     display: block;
-    position: relative;
-    left: 80%;
-    top: -40px;
-    width: 30px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEUAAAD///+Ghobh4eFycnJXV1dkZGT5+fna2tq7u7smJia1tbVfX1/x8fE8PDwXFxeioqKoqKiurq55eXnW1tbQ0NCPj48vLy8cHBwJCQnu7u5ra2tBQUFHR0dMTEx/f3/Hx8eXl5en0KkYAAAHLElEQVR4nOWd2YKiOhBAg4Bsijjtitri///kgLY7ZKmsVM5738m5SCoJVRUS6CZJ0mxZbaK43Oa7xZ7sF7t8W8bRplpmaZJo//eJxv92HWaTw5HQOR4mWVhrHIUuw7SITguG3JPFKSpSTSPRYZhW8Z5b7sk+rnRYqjacZ2eA3JNzNlc8IqWGdTGT0rsxK5S+luoMkyJWoHcjLtTNsaoMVz/K9G78rBSNTInhvCoV+3WUlZJXUoFhONGgd2MSOmCYTrX5dUylA4ik4epXq1/Hr+QLKWW4UhEc2MykHCUMQzN+V0eJ9xFsmMitXUQ5gwMk1HBp1K9jadRwrSP+sSjX5gzN/kCfnA0ZNpb8OhoDhvPIoiAhkfBKTtRwnVsVJCQXfRsFDS+W/TouGg1r1rGSGY5CO2QRwwZy+qKDvciEI2BY2RZ7odJhqHeXJMpUueF8a9vpgy1v2OA0TG0HiW9yzr0xn2FjW6cXvvmGy7Cw7TJAocrwn22TQf6pMXQpSnzCETXYhi4s1Ia5yBu6LcihyDJ0+Sd6g/VDZRi6O8k8YUw3dENXw8Q79KBBNWxsj50TauinGaa2R84NbQFHMZy7txYdIqcswymGru0maGwhhm7tB1kM7xcHDd0PhO8MhsUhw8b2iIUZmlAHDGtXDp342Q+cwA0YunFsKMZRxND15XY/F37Dte2xAuk98O8zHFGof6c38PcZ2v26JEPEZ9jYHqcEPSGjx9D2KKXgMbT1CVsN3x/CvwzHOo/e+ZpPvwxtZFmopGQZms+TUc1n3s2HYWJ7fApIqIbjnmZunGmGoe3RKSGkGJrLNtTJbNhwZXtsilgNGuJ4hB8P8dUQyyN8f4ivhvpztk3x2284niNuNmmvIeiAdHc6RDo5nHaQYU37DCGx8EdX0eArKaTg6BkTn4bilS+5qtIkFivxY5XJt+FcXFB1peAwgJOjx+AehuKn+OYEIf//H6f8D0PhfSG0OgCG8K7usU+8GwpH+4X+OvNXEv6y6T/uk8TdUHi++jEqKDHAP0PxnS9PwpVKxLNCkjdD8aQLWAELHPETsuLNULxI2X3D+NWwFv7zEfxKSf1iCMgMcn6muf9Mb4aAra/z0eK+Eb4aiq8YiPMRv2P+MMwgf050tlz5BDBRtGQPQ9gpaWlw5Q371nB+GIL+nJCtid1hRwpNz7obwo8vIiM7YPg36fTPUCb9aTE7T3RyngEm0QfVn6G6riuuEf8Zji//iZf9zRDTKeIn6dVwHMncMIqr4XjTZ9hEV8OT7WFo5NQZ1jLTsess6tYQx3ffIcLWELbsHgtZa6ivj5ULTFrDg+1BaOXQGo4x4ZmfY0Aw5AjRSDwwxLwq7UgJ7mDRhgsy/mREOksytvomUSqykfr7Q5GGekkLuYC9ITJ7p6mC5pschDKFghGROKQRaIMjicSrFBN4Xrc5QRnFkoBrYWODghLngVsCrnEy8w7eAe9icwJKGyOmHyH8Ie4I9AzjYtgQWhK5INDj4MywIXR1CT/uNpW1dweewIz/GeJ/D/HPpfjjIf41Df51Kf69Bf79If49Pv5zGvxnbfjPS/GfeeP/boHfEP/3Qw++AeP/jo87XGRe5NPgz4nCn9fmQW4i/vxSzCvT1JM8bw9y9fHXW+CvmcFf9+RB7Rr++kP8NaT464A9qOXGX4+Pv6eCB30x8Pc2wd+fxoMeQ/j7RHnQ6wt/vzb8Pfc86JuIv/clqlPF/v6l+HvQetBHGH8vaDQPcbifN5KHSOnJjuR7MK2vPv67ETy43wL/HSUe3DPjwV1BI59sOO578uDOrqCxPUoJ+O5dG3GCDefdeR7cfzja+ZT7DksP7iH14C5ZD+4DDhrbAxZG8E5nD+7l9uBu9SAA189aYDusQTEcUeCnfSSiGI7oEJz2+YRmGDS2R87J0DTKNhxJCnhBdaAbQvJ0jMPICmEYjiAssmrmWYbOL8IvLAGmoeOKTEEOQ6d/qBxtHTgMHZ5ueFLPeAydDRr0MCFiGDS2XXqhBnpBwyB1b42ac2a6cBoGc9d2GlvejCxeQ9f2i8P7QbihU1FDoPmPgGHQuHI8teebY8QNg9qNQ8ajULWOkKEbS7iL2JAFDYO17bCRixYJiBoGc7tfpiLhtF1hQ7sLHJEpBm5o70P49ydsXYbB2kbGRgkr04EZ2si7gVY/QA2DxOxP9QwuYAEbBkFoLpNxJtG+UMIwCFZmHGdSVQ9Shq2j/tzwX8mqDknDdm+sd1c1la7okDZs30d9vbQmCtqHKjBsV3KVjvhYVkoKq5QYtqwgpTs0flQVVakybANkoa4LTFyoq99UZ9hSFyrCx6xQ2o9CqWHLPJNb65wz1VWNqg070iqGnOjs40pHsZ8Ow460iE78xcmLU1ToKmXUZdhRh9nkwDq8Oh4mWaizEYxOwxtJkmbLahPF5TbfLfZkv9jl2zKONtUySxP9Ne//AW0reHquG4wYAAAAAElFTkSuQmCC);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: white;
+    display: block;
+    float: right;
     height: 30px;
-    
+    margin-top: 10px;
+    padding: 8px;
+    width: 40px;  
   }
   #home{
     display: flex;
     flex-direction: column;
-    max-height: 370vh;
+    /* max-height: 370vh; */
   }
   #baseContainer{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .container1{
     display: flex;
@@ -538,11 +543,10 @@ li{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
-   
   }
   #block1{
     margin-left: 0px;
-    width: 100vw;
+    /* width: 100vw; */
   }
   #block2{
     margin-left: 10px;
@@ -576,12 +580,12 @@ li{
   }
   #footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
     position: relative;
-    top: 300vh;
-    width: 100vw;
-    font-size: 12px;
-    /* height: 20vh; */
+    top: 30px;
+    
+    
   }
   .media_siren, #Header{
     display: none;  
@@ -669,6 +673,7 @@ li{
   .homecompo1{
     display: flex;
     flex-direction: column;
+    
   }
   #homeimg1, #homeimg2, #homeimg3{
     width: 90vw;
@@ -692,6 +697,7 @@ li{
   #homecompo2{
     position: relative;
     top: 170px;
+    margin-left: 0px;
   }
   #homehr{
     position: relative;
@@ -701,7 +707,8 @@ li{
   .homelatest{
     position: relative;
     top: 170px;
-    align-items: center;
+    margin-left: 0px;
+    /* align-items: center; */
    
   }
   #latest{
@@ -718,7 +725,18 @@ li{
   }
   .containerHome{
     margin-left: 10px;
-    width: 135vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content{
+    width: 100%;
+  }
+  .highlights{
+    width: 100%;
+  }
+  .highlightsCorner{
+    width: 100%;
   }
   #homeBlock{
     position: relative;
@@ -729,7 +747,10 @@ li{
     position: relative;
     top: 540px;
     left: 10px;
-    width: 140vw;
+    width: 95%;
+  }
+  .homead{
+    display: none;
   }
 
 

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Store } from "./AllStore";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
 import profile from "../Images/profile.png"
 import facebook from "../Images/facebook.png"
 import instagram from "../Images/instagram.png"
@@ -28,7 +28,8 @@ const DynamicCompo = () =>{
         navi(-1)
         navbar.style.display = "block"
     }
-    
+    const changeHandle = () =>{
+    }
     return(
         <div id="componentDyn">  
         {data.filter((item) => item.id === parseInt(id)).map((item,index)=>{
@@ -36,10 +37,10 @@ const DynamicCompo = () =>{
                 <div key={index}>
                 <div id="dynamic_header">
                     <div id="dynamic_siren">
-                        <Link to='/' style={{color:"white", textDecoration:"none",}} onClick={handleclick} >
+                        <NavLink to='/' style={{color:"white", textDecoration:"none",}} onClick={handleclick} >
                         <span id='the'>The</span> 
                         <span id='siren'>Siren</span>
-                        </Link>
+                        </NavLink>
                     </div>
                     <button id="get_started">Get Started</button>
                 </div>
@@ -92,11 +93,13 @@ const DynamicCompo = () =>{
         })}
         <div className="story">
     
-        {data.filter((item) => (item.category === dRouteData) && (item.id % 3 ===1 || item.id % 3 === 0)).map((item,index) =>{
+        {data.filter((item) => (item.category === dRouteData) && (item.id % 3 ===1 || item.id % 3 === 0 || item.id % 3 === 2)).slice(0,3).map((item,index) =>{
             return(
                 <>
                 <div className="more_siren">                   
-                    <img src={item.image} alt="not found" className="story_img"/>
+                <Link to={`dynamiccompo/${data.id}`}>
+                   
+                    <img src={item.image} alt="not found" className="story_img" onClick={changeHandle}/></Link>
                     <div id="siren_story">
                         <h1 className="story_head">{item.heading}</h1>
                     </div>
@@ -109,6 +112,7 @@ const DynamicCompo = () =>{
                             <p>Aug 28, 2023 10min read</p> 
                         </div>
                     </div>
+                    
                 </div>
                 </>
             )

@@ -8,6 +8,7 @@ import github from "./Images/github.png"
 import phone from "./Images/phone.png"
 import email from "./Images/email.png"
 
+
 const FooterCompo = () =>{
     const handleclick = () =>{
         window.scrollTo({top: 0, behavior: 'smooth'})
@@ -26,7 +27,7 @@ const FooterCompo = () =>{
                 <ul type="none">
                     <h2 className="footerlink">Explore</h2>
                     <Link to='/bollywood' className="footerlink" onClick={handleclick}><li>Bollywood</li></Link>
-                    <Link to='/tech' className="footerlink" onClick={handleclick}><li>Technology</li></Link>
+                    <Link to='/technology' className="footerlink" onClick={handleclick}><li>Technology</li></Link>
                     <Link to='/hollywood' className="footerlink" onClick={handleclick}><li>Hollywood</li></Link>
                     <Link to='/fitness'className="footerlink" onClick={handleclick}><li>Fitness</li></Link>
                     <Link to='/food' className="footerlink" onClick={handleclick}><li>Food</li></Link> 
