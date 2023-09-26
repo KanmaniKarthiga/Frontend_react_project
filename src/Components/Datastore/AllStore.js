@@ -7,6 +7,8 @@ import Fitness from '../Navbar/Fitness'
 import Food from '../Navbar/Food'
 import {Route, Routes} from 'react-router-dom';
 import DynamicCompo from './DynamicCompo'
+import FooterCompo from '../Footer';
+
 
 export const Store = createContext()
 function AllStore(){
@@ -69,7 +71,7 @@ function AllStore(){
         },
         {
             id:8,
-            image:"https://dreamtiffin.com/wp-content/uploads/2022/09/Veg-Thali.webp",
+            image:"https://cdn.pixabay.com/photo/2016/08/01/17/08/tomatoes-1561565_1280.jpg",
             heading:"Tomato price hits household budget hard, cost of vegetarian thali rose by 34% in July",
             // description:"A recent research by consultancy firm Crisil has shown that in the past 17 months or so, the cost of vegetarian thali in the Indian households has risen from Rs 24.4 to Rs 37.7 and the cost of non-vegetarian thali has risen from Rs 55.6 to Rs 66.8. ",
             content:"The price of tomato rose by 233% month-on-month to Rs 110/kg in July from Rs 33/kg in June. In retail markets, it has skyrocketed to Rs 250 per kg, making it more expensive than petrol (Rs 97 per litre in Delhi).Of the 34% rise in the cost of a vegetarian thali, 25% can be attributed solely to the price of tomato, which rose 233% month-on-month to Rs 110/kg in July from Rs 33/kg in June, said the Crisil report.The price of tomatoes in retail markets has skyrocketed to Rs 250 per kg, making it more expensive than petrol (Rs 97 per litre in Delhi).",
@@ -176,7 +178,7 @@ function AllStore(){
             id:21,
             image:"https://cdn.tasteatlas.com//Images/Dishes/b53ee1a62b704a36b63361822681ed47.jpg?w=905&h=510",
             heading:"Ras malai",
-            description:"Ras malai is a popular Indian dessert consisting of white cream, sugar, milk, and cardamom-flavored paneer cheese known as chhana.",
+            description:"Ras malai is a popular Indian dessert consisting of white cream, sugar, milk,paneer cheese known as chhana.",
             content:"Rasmalai is a popular East Indian delicacy made with milk, a curdling agent, sugar, nuts, saffron and cardamoms. These sweet, juicy and soft cheesy morsels are addictive and super delicious.Rasmalai is a popular Indian dessert that originates from the state of Bengal. It is a delightful sweet made from soft and spongy cottage cheese dumplings, also known as 'rasgullas', which are soaked in a luscious, creamy, and aromatic milk syrup flavored with cardamom and saffron.Rasmalai, or as it is traditionally called Rossomoloi, is a Bengali delicacy of spongy soft cheese dumplings that are cooked in sugar syrup and then soaked in creamy cardamom-saffron milk, absorbing all the lovely flavors.",
             category:"FSide",
         },
@@ -761,6 +763,7 @@ function AllStore(){
                     <Route path='/Food' element={<Food/>}></Route>
                     <Route path='/dynamiccompo/:id' element={<DynamicCompo/>}/>
                 </Routes>
+               <FooterCompo/>
             
         </div>
         </Store.Provider>

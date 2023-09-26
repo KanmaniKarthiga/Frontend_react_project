@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Store } from "../Datastore/AllStore";
-import { NavLink } from "react-router-dom";
+import { NavLink, Routes } from "react-router-dom";
 
 
 function Bollywood() {
@@ -14,7 +14,7 @@ function Bollywood() {
     }
 
     return (
-        <>
+        
             <div className="component">
                 <div id="baseContainer">
                     <div id="block1">
@@ -94,9 +94,9 @@ function Bollywood() {
                         )
                     })}
                 </div>
+                
             </div>
-
-        </>
+        
     )
 }
 export default Bollywood;

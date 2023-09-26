@@ -175,8 +175,73 @@ hr{
   flex-direction: row;
   width: 100%;
   gap: 60px;
+  
 }
+hr{
+  margin-left: -8px;
+  margin-top: 20px;
+  width: 100%;
+}
+#hrhead{
+  width: 10%;
+  margin-left: 5px;
+  margin-top: 8px;
+  background-color: rgb(240, 107, 107);
+}
+.header{
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
 
+}
+.image{
+  width: 250px;
+  height: 170px;
+  box-shadow: 1px 1px 5px 0 gray;
+}
+.imageCorner{
+  width: 120px;
+  height: 100px;
+  box-shadow: 1px 1px 5px 0 gray;
+}
+.container1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 90%;
+}
+.container2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 70%;
+}
+.container3{
+  display: block;
+  font-size: 13px;
+  width: 70%;
+  margin-top: 10px;
+}
+.highlights{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.highlightsCorner{
+  font-weight: 500;
+  font-size: 15px;
+}
+.content{
+  font-weight: 400;
+  font-size: 14px;
+}
+.contentCorner{
+  font-weight: 400;
+}
+.adbox{
+  margin-top: 50px;
+  height: 40em;
+  width: 60%;
+}
 #block1{
   display: flex;
   flex-direction: column;
@@ -196,90 +261,81 @@ hr{
   float: right;
 }
 #block3{
-  position: relative;
-  left: 69%;
-  top: -150vh;
-  width: 22%;
+  float: right;
+  position: absolute;
+  left: 58%;
+  top: 95em;
 }
 #block3T{
-  position: relative;
-  left: 69%;
-  top: -105vh;
-  width: 22%;
+  position: absolute;
+  left: 58%;
+  top: 95em;
   
 }
 #block3F{
-  position: relative;
-  left: 69%;
-  top: -180vh;
-  width: 22%;
-}
-
-.container1{
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-  width: 90%;
-}
-.container2{
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  width: 70%;
-}
-.container3{
-  display: block;
-  margin-left: -40px;
-  margin-top: 15px;
-  font-size: 13px;
-}
-hr{
-  margin-left: -8px;
-  margin-top: 20px;
-  width: 100%;
-}
-#hrhead{
-  width: 10%;
-  margin-left: 5px;
-  margin-top: 8px;
-  background-color: rgb(240, 107, 107);
-}
-.header{
-  margin-top: 20px;
-  font-size: 25px;
-  font-weight: bold;
-
-}
-.contentContainer{
-  margin-left: 15px;
-} 
-.image{
-  width: 250px;
-  height: 170px;
-  box-shadow: 1px 1px 5px 0 gray;
-}
-.imageCorner{
-  width: 120px;
-  height: 100px;
-  box-shadow: 1px 1px 5px 0 gray;
+  position: absolute;
+  left: 58%;
+  top: 100em;
 }
 .imageSide{
   width: 320px;
   height: 180px;
 }
-.highlights{
-  font-weight: 500;
-  margin-bottom: 10px;
+.contentContainer{
+  margin-left: 15px;
 }
-.highlightsCorner{
-  font-weight: 500;
+.linkStyle{
+  text-decoration: none;
+  color: black;
 }
-.content{
-  font-weight: 400;
-  font-size: 14px;
+
+
+/* ########################### */
+#footer{
+  background-image: url("https://i0.wp.com/vincenttechblog.com/wp-content/uploads/2018/11/footer-background.jpg?ssl=1");
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  position: absolute;
+  
 }
-.contentCorner{
-  font-weight: 400;
+.footerlink{
+  text-decoration: none;
+  color: white;
+}
+li{
+  text-align: center;
+  margin-top: 5px;
+}
+#footer_btn{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 120px;
+  height: 40px;
+  font-weight: 600;
+}
+#footer_para{
+  width: 300px;
+  color: white;
+}
+.icon_new{
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.footer_contact{
+  color: white;
+  position: relative;
+  top: -7px;
+  margin-left: 10px;
+}
+#time{
+  margin-top: 25px;
+  font-size: 13px;
+  color: grey;
 }
 .Sidehead{
   margin-top: 5px;
@@ -290,23 +346,10 @@ hr{
   font-weight: 400;
   line-height: 25px;
 }
-.adbox{
-  margin-top: 50px;
-  height: 40em;
-  width: 70%;
-}
-#time{
-  margin-top: 25px;
-  font-size: 13px;
-  color: grey;
-}
-#page2_btn{
-  height: 50px;
-  width: 200px;
-  border: 2px solid green;
-  background-color: white;
-  margin-left: 70%;
-}
+
+/* ########################## */
+
+
 #dynamic_header{
   height: 150px;
   display: flex;
@@ -432,10 +475,7 @@ hr{
   height: 25px;
   margin-left: 5px;
 }
-.linkStyle{
-  text-decoration: none;
-  color: black;
-}
+
 .story{
   display: flex;
   justify-content: space-around;
@@ -464,50 +504,11 @@ hr{
 #siren_story{
   width: 80%;
 }
-#footer{
-  background-image: url("https://i0.wp.com/vincenttechblog.com/wp-content/uploads/2018/11/footer-background.jpg?ssl=1");
-  display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  
-}
-.footerlink{
-  text-decoration: none;
-  color: white;
-}
-li{
-  text-align: center;
-  margin-top: 5px;
-}
-#footer_btn{
-  margin-left: 20px;
-  margin-top: 10px;
-  width: 120px;
-  height: 40px;
-  font-weight: 600;
-}
-#footer_para{
-  width: 300px;
-  color: white;
-}
-.icon_new{
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-.footer_contact{
-  color: white;
-  position: relative;
-  top: -7px;
-  margin-left: 10px;
-}
 
 
 
 /* ############################ */
-@media (min-width : 300px) and (max-width : 500px){
+/* @media (min-width : 300px) and (max-width : 500px){
   #navbar{
     display: none;
   }
@@ -542,7 +543,6 @@ li{
   #home{
     display: flex;
     flex-direction: column;
-    /* max-height: 370vh; */
   }
   #baseContainer{
     display: flex;
@@ -562,7 +562,6 @@ li{
   }
   #block1{
     margin-left: 0px;
-    /* width: 100vw; */
   }
   #block2{
     margin-left: 10px;
@@ -724,7 +723,6 @@ li{
     position: relative;
     top: 170px;
     margin-left: 0px;
-    /* align-items: center; */
    
   }
   #latest{
@@ -769,10 +767,10 @@ li{
     display: none;
   }
 
-}
+} */
 
 /* ################# */
-@media (min-width: 500px) and (max-width: 800px){
+/* @media (min-width: 500px) and (max-width: 800px){
   #homeimg1{
     position: relative;
     top: 30px;
@@ -851,6 +849,85 @@ li{
     width: 5%;
     background-color: rgb(240, 107, 107);
   
+  } */
+
+/* } */
+
+/* ##########Tab######### */
+@media (min-device-width: 700px) and (max-device-width: 1200px){
+  #baseContainer{
+    width: auto;
+    display: block;
+  }
+  #Header{
+    width: 100%;
+  }
+  #block1{
+    margin-left: 5px;
+  }
+  #navbar{
+    margin-left: 0px;
+  }
+  hr{
+    margin-left: 0px;
+  }
+  #block2{
+    width: 60%;
+    position: absolute;
+    left: 10px;
+  }
+  .adbox{
+    position: absolute;
+    left: 90%;
+    top: 8%;
+  }
+  #block3, #block3T, #block3F{
+    display: none;
+  }
+  
+  #footer{
+    position: relative;
+    top: 50em;
+  }
+
+  /* ################## */
+  .homecompo1{
+    position: relative;
+    left: 5px;
+    margin-bottom: 20%;
+  }
+  #homecompo2,  #homehr{
+    margin-left: 0px;
+  }
+ 
+  
+  #homeimg1{
+    width: 400px;
+    height: 310px;
+  }
+  #homeimg2{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    top: -129px;
+  }
+  #homeimg3{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    top: 29px;
+    left: -65px;
+  }
+  .homelatest{
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+    position: relative;
+    top: 30%;
+  }
+  #latestArticles{
+    width: 60%;
+    margin-left: 0px;
   }
 
 }
