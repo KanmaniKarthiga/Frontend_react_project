@@ -12,9 +12,14 @@ function Home(){
     return(
         <div id="home">
             <div className='homecompo1'>
-                <img src='https://i.ytimg.com/vi/8cmvN_4Ehj4/maxresdefault.jpg' alt='bollywood' id='homeimg1'/>
-                <img src='https://static5.depositphotos.com/1005629/533/i/600/depositphotos_5338696-stock-photo-panna-cotta.jpg' alt='food' id='homeimg2'/>
-                <img src='https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2021-12/211208-working-out-stock-mn-1310-55e1c7.jpg' alt='fitness' id='homeimg3'/>
+                <div>
+                    <img src='https://i.ytimg.com/vi/8cmvN_4Ehj4/maxresdefault.jpg' alt='bollywood' id='homeimg1'/>
+                </div>
+                <div>
+                    <img src='https://static5.depositphotos.com/1005629/533/i/600/depositphotos_5338696-stock-photo-panna-cotta.jpg' alt='food' id='homeimg2'/>
+                    <img src='https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2021-12/211208-working-out-stock-mn-1310-55e1c7.jpg' alt='fitness' id='homeimg3'/>
+                </div>
+               
             </div> 
             <div id='homecompo2'>The Latest</div><hr id="homehr"/>
             <div className="homelatest">
@@ -75,7 +80,7 @@ function Home(){
                                     <img src={data.image} alt='Not found' className="imageCorner"/>
                                 </NavLink>
                                 </div>
-                                <div className="contentContainer">
+                                <div className="contentContainer topposts">
                                 <NavLink to={`/Dynamiccompo/${data.id}`} className="linkStyle" onClick={handleclick}>
                                     <h3 className="highlightsCorner">{data.heading}</h3>
                                     <h4 className="contentCorner">{data.description}</h4>

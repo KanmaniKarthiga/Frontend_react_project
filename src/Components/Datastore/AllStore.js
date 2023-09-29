@@ -7,7 +7,7 @@ import Fitness from '../Navbar/Fitness'
 import Food from '../Navbar/Food'
 import {Route, Routes} from 'react-router-dom';
 import DynamicCompo from './DynamicCompo'
-import FooterCompo from '../Footer';
+
 
 
 export const Store = createContext()
@@ -762,9 +762,7 @@ function AllStore(){
                     <Route path='/Fitness' element={<Fitness/>}></Route>
                     <Route path='/Food' element={<Food/>}></Route>
                     <Route path='/dynamiccompo/:id' element={<DynamicCompo/>}/>
-                </Routes>
-               <FooterCompo/>
-            
+                </Routes>   
         </div>
         </Store.Provider>
     )

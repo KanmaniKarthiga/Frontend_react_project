@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import facebook from "./Images/facebook.png"
-import instagram from "./Images/instagram.png"
-import twitter from "./Images/twitter.png"
-import youtube from "./Images/youtube.png"
-import github from "./Images/github.png"
-import phone from "./Images/phone.png"
-import email from "./Images/email.png"
+import facebook from "../Images/facebook.png"
+import instagram from "../Images/instagram.png"
+import twitter from "../Images/twitter.png"
+import youtube from "../Images/youtube.png"
+import github from "../Images/github.png"
+import phone from "../Images/phone.png"
+import email from "../Images/email.png"
 
 
 const FooterCompo = () =>{

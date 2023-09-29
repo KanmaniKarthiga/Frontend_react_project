@@ -61,26 +61,29 @@ hr{
 #home{
   max-height: 350vh;
 }
+#homecompo1{
+  display: flex;
+}
 #homeimg1{
   position: relative;
   top: 30px;
-  left: 175px;
+  left: 150px;
   width: 650px;
   height: 420px;
   border-radius: 5px;
 }
 #homeimg2{
-  position: relative;
-  top: -190px;
-  left: 185px;
+  position: absolute;
+  top: 225px;
+  left: 51em;
   width: 350px;
   height: 200px;
   border-radius: 5px;
 }
 #homeimg3{
-  position: relative;
-  top: -185px;
-  left: 835px;
+  position: absolute;
+  top: 430px;
+  left: 51em;
   width: 350px;
   height: 210px;
   border-radius: 5px;
@@ -88,7 +91,7 @@ hr{
 #homecompo2{
   font-size: 30px;
   font-weight: bold;
-  margin-top: -80px;
+  margin-top: 8%;
   margin-left: 174px;
 }
 #homeimg4{
@@ -101,9 +104,8 @@ hr{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 50px;
-  margin-left: 174px;
-  margin-top: 20px;
+  justify-content: space-around;
+  margin:50px;
  }
 .imagehome{
   width: 305px;
@@ -299,7 +301,7 @@ hr{
   padding-bottom: 20px;
   width: 100%;
   position: absolute;
-  
+  height: auto;
 }
 .footerlink{
   text-decoration: none;
@@ -854,7 +856,7 @@ li{
 /* } */
 
 /* ##########Tab######### */
-@media (min-device-width: 700px) and (max-device-width: 1200px){
+@media (min-width: 600px) and (max-width: 1200px){
   #baseContainer{
     width: auto;
     display: block;
@@ -863,7 +865,7 @@ li{
     width: 100%;
   }
   #block1{
-    margin-left: 5px;
+    margin-left: 0px;
   }
   #navbar{
     margin-left: 0px;
@@ -887,36 +889,39 @@ li{
   
   #footer{
     position: relative;
-    top: 50em;
+    top: 50em
   }
 
   /* ################## */
   .homecompo1{
-    position: relative;
-    left: 5px;
+    display: flex;
     margin-bottom: 20%;
+    
   }
   #homecompo2,  #homehr{
     margin-left: 0px;
   }
- 
-  
   #homeimg1{
     width: 400px;
     height: 310px;
+    margin-left: -140px;
   }
   #homeimg2{
     width: 250px;
     height: 150px;
-    position: relative;
-    top: -129px;
+    position: absolute;
+    top: 14em;
+    left: 27em;
   }
   #homeimg3{
     width: 250px;
     height: 150px;
-    position: relative;
-    top: 29px;
-    left: -65px;
+    position: absolute;
+    top: 385px;
+    left: 27em;
+  }
+  .imagehome{
+    width: 200px;
   }
   .homelatest{
     width: 100%;
@@ -925,9 +930,302 @@ li{
     position: relative;
     top: 30%;
   }
-  #latestArticles{
-    width: 60%;
+  .homead{
+    position: relative;
+    top: 55em;
+    left: -7em;
+    width: 140px;
+  }
+  #imagecontainer{
+    width: 10%;
+  }
+  #datacontainer{
+    width: 25vw;
+  }
+  .containerHome{
+    display: flex;
     margin-left: 0px;
+    width: 100%;
+  }
+  .contentContainer{
+    width: 365px;
+  }
+  #ArticleCompo{
+    margin-left: 0px;
+
+  }
+  #homeBlock{
+    margin-left: 0px;
+    position: relative;
+    top: 16em;
+  }
+  .topposts{
+    width: 200px;
+  }
+  #ho_img{
+    display: none;
+  }
+  /* ####################### */
+  #dynamic_siren{
+    width: 25%;
+  }
+  #dynamic_header{
+    width: 100%;
+  }
+  #dynamic_block{
+    width: 95%;
+    position: relative;
+    left: 5%;
+  }
+  .dynamic_content{
+    width: 90%;
+    text-align: justify;
+
+  }
+  .bottom_profile{
+    width: 100%;
+  }
+  .Likes{
+    position: relative;
+    top: 15em;
+    left: 0px;
+  }
+  .story{
+    width: 100%;
+    margin-top: 40px;
+    background-color: white;
+  }
+  .story_head{
+    margin-left: 30px;
+    text-align: center;
+  }
+  .more_siren{
+    width: 25vw;
+    margin-left: 0px;
+    background-color: gainsboro;
+  }
+  .story_img{
+    width: 100%; 
+  }
+  #media_story{
+    display: none;
   }
 
+}
+
+
+/* ######################## */
+@media (min-width: 250px) and (max-width: 699px){
+  #baseContainer{
+    width: auto;
+    display: block;
+  }
+  .heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #Header{
+    width: 100%;
+  }
+  #block1{
+    margin-left: 0px;
+  }
+  #navbar{
+    display: none;
+  }
+  #menu_list{
+    display: block;
+  }
+  .mobile-menu-icon{
+    display: block;
+    background-image: url(data:image/png;base64,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);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: white;
+    display: block;
+    float: right;
+    height: 30px;
+    margin-top: 23px;
+    padding: 8px;
+    width: 40px;  
+  }
+  .media_links{
+    color: black;
+    text-decoration: none;
+  }
+  hr{
+    margin-left: 0px;
+  }
+  /* ############################# */
+  #block3, #block3T, #block3F{
+    display: none;
+  }
+  .adbox{
+    display: none;
+  }
+  .container1{
+    display: block;
+    width: 100%;
+  }
+  
+  /* ############################ */
+  #homeimg1{
+    position: relative;
+    top: 30px;
+    left: 5px;
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+  }
+  #homeimg2{
+    position: relative;
+    top: 35px;
+    left: 6px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #homeimg3{
+    position: relative;
+    top: 40px;
+    left: 6px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #homecompo2{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    left: -5em;
+  }
+  .containerHome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+  }
+  #ArticleCompo{
+    position: relative;
+    left: -5em;
+    top: 20px;
+  }
+  #homeBlock{
+    width: 100%;
+    position: relative;
+    top: 18em;
+    left: 20px;
+    margin-left: 0px;
+  }
+  .homeTop-posts, #hrhead_home{
+    margin-left: 20px;
+  }
+  #ho_img{
+    display: none;
+  }
+   #latestArticles{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+   }
+   .homead{
+    display: none;
+   }
+  .imagehome{
+    width: 305px;
+    height: 170px;
+    box-shadow: 1px 1px 5px 0 gray;
+  }
+   #datacontainer{
+     margin-top: 10px;
+     width: 300px;
+     font-size: 15px;
+   }
+  #imagecontainer{
+   margin-top: 10px;
+  }
+  #homehr{
+    position: relative;
+    top: 20px;
+    left: -9em;
+    width: 25%;
+    background-color: rgb(240, 107, 107);
+  
+  } 
+
+  /* ############################# */
+  #dynamic_siren{
+    width: auto;
+  }
+  #componentDyn{
+    width: 100%;
+  }
+  .middle{
+    display: grid;
+    grid-template-columns: auto 140px 200px;
+    width: 100%;
+  }
+  #dynamic_header{
+    width: 100vw;
+  }
+  #dynamic_block{
+    width: 100vw;
+    position: relative;
+    left: 5px;
+  }
+  .social_media{
+    margin-left: 25px;
+  }
+  #dynamic_img{
+    width: 400px;
+    height: 200px;
+  }
+  .dynamic_content{
+    width: 100vw;
+    font-size: 1em;
+    text-align: justify;
+  }
+  #pro_user{
+    font-size: 1em;
+  }
+  .story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    
+  }
+  .story_head{
+    width: 300px;
+  }
+  #media_story{
+    display: none;
+  }
+  .Likes{
+    position: relative;
+    top: 16em;
+  }
+  /* ########################### */
+  #footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 110em;
+    width: 100%;
+  }
+  .media_siren{
+    position: relative;
+    left: 29%;
+  }
+  .footerlink{
+    text-align: center;
+  }
+  .footer_img{
+    position: relative;
+    left: 25px;
+  }
 }
