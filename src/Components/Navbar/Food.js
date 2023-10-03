@@ -11,7 +11,7 @@ function Food(){
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
-        <div className="componentF">
+        <div className="componentFoo">
         <div id="baseContainer">
             <div id="block1">
             <div className="header">Food</div><hr id="hrhead"/>
@@ -60,7 +60,7 @@ function Food(){
                         )
                     })}
                 <div>
-                    <img src="https://thehighestcritic.com/wp-content/uploads/2023/04/the-wingstop-hot-box-wingstop-420-mail-ad.gif" alt='Not found' className="adbox"/>                                
+                    <img src="https://www.rvadv.com/wp-content/uploads/2020/07/General-1080x1920-1.gif" alt='Not found' className="adbox"/>                                
                 </div>
         </div>
         </div>

@@ -11,7 +11,7 @@ function Hollywood(){
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
-        <div className="componentH">
+        <div className="component">
         <div id="baseContainer">
             <div id="block1">
                 <div className="header">Hollywood</div><hr id="hrhead"/>

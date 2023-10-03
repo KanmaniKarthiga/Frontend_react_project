@@ -10,7 +10,7 @@ function Tech(){
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
-        <div className='componentT'>
+        <div className='componentF'>
         <div id="baseContainer">
             <div id="block1">
                 <div className="header">Technology</div><hr id="hrhead"/>

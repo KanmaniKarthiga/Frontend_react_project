@@ -8,12 +8,12 @@ const NavBar = () => {
 
         let menu = document.getElementById('menu_list');
         if ((count % 2) !== 0) {
-            menu.style.display = 'block';
+            menu.style.display = 'none';
             count++;
 
         }
         else {
-            menu.style.display = 'none'
+            menu.style.display = 'block'
             count++;
         }
     }

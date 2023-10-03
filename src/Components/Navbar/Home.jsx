@@ -95,6 +95,7 @@ function Home(){
                 <img src="https://webbtelescope.org/files/live/sites/webb/files/home/news/first-images/gallery/_images/STScI-J-HeroERO-Gallery-Fallback-image-1920x1080.jpg?t=tn370" alt="not found" id="ho_img"/>
             </div>
         </div>
+        
     )
 }
 export default Home;

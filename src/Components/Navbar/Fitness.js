@@ -11,7 +11,7 @@ function Fitness(){
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
-        <div className="componentFit">
+        <div className="componentF">
         <div id="baseContainer">
             <div id="block1">
             <div className="header">Fitness</div>

@@ -97,7 +97,7 @@ const DynamicCompo = () =>{
             return(
                 <>
                 <div className="more_siren">                   
-                <Link to={`dynamiccompo/${data.id}`}>
+                <Link to={`${data.id}`}>
                    
                     <img src={item.image} alt="not found" className="story_img" onClick={changeHandle}/></Link>
                     <div id="siren_story">

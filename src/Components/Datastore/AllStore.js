@@ -174,14 +174,14 @@ function AllStore(){
             content:"Falooda (also spelled Faluda) is a popular Indian summer dessert drink made with various layered elements like milk, sweet basil seeds (sabja seeds), jelly, vermicelli, ice cream, nuts, and rose syrup. Served both in restaurants and even on the streets in many Indian cities, this popular Indian dessert is perfect for warmer weather and outdoor dining. The Indian ‘falooda’ comes from its Persian counterpart ‘faloodeh.’ It reached India between 16-18th century with the many Central Asian dynasties invading and settling here. Then, the Mughal Empire had a great hand in developing it in its present form. Sometimes called as ‘faluda,’ it is as popular in Sri Lanka, Bangladesh and Pakistan as it is in India, especially in Mumbai, Pune, Delhi and Gurgaon. Not to forget, I too, quite love the whole falooda deal! This falooda recipe is my most favorite.",
             category:"FSide",
         },
-        {
-            id:21,
-            image:"https://cdn.tasteatlas.com//Images/Dishes/b53ee1a62b704a36b63361822681ed47.jpg?w=905&h=510",
-            heading:"Ras malai",
-            description:"Ras malai is a popular Indian dessert consisting of white cream, sugar, milk,paneer cheese known as chhana.",
-            content:"Rasmalai is a popular East Indian delicacy made with milk, a curdling agent, sugar, nuts, saffron and cardamoms. These sweet, juicy and soft cheesy morsels are addictive and super delicious.Rasmalai is a popular Indian dessert that originates from the state of Bengal. It is a delightful sweet made from soft and spongy cottage cheese dumplings, also known as 'rasgullas', which are soaked in a luscious, creamy, and aromatic milk syrup flavored with cardamom and saffron.Rasmalai, or as it is traditionally called Rossomoloi, is a Bengali delicacy of spongy soft cheese dumplings that are cooked in sugar syrup and then soaked in creamy cardamom-saffron milk, absorbing all the lovely flavors.",
-            category:"FSide",
-        },
+        // {
+        //     id:21,
+        //     image:"https://cdn.tasteatlas.com//Images/Dishes/b53ee1a62b704a36b63361822681ed47.jpg?w=905&h=510",
+        //     heading:"Ras malai",
+        //     description:"Ras malai is a popular Indian dessert consisting of white cream, sugar, milk,paneer cheese known as chhana.",
+        //     content:"Rasmalai is a popular East Indian delicacy made with milk, a curdling agent, sugar, nuts, saffron and cardamoms. These sweet, juicy and soft cheesy morsels are addictive and super delicious.Rasmalai is a popular Indian dessert that originates from the state of Bengal. It is a delightful sweet made from soft and spongy cottage cheese dumplings, also known as 'rasgullas', which are soaked in a luscious, creamy, and aromatic milk syrup flavored with cardamom and saffron.Rasmalai, or as it is traditionally called Rossomoloi, is a Bengali delicacy of spongy soft cheese dumplings that are cooked in sugar syrup and then soaked in creamy cardamom-saffron milk, absorbing all the lovely flavors.",
+        //     category:"FSide",
+        // },
         {
             id:22,
             image:"https://assets.telegraphindia.com/telegraph/2023/May/1685180682_naseeb-se.jpg",
