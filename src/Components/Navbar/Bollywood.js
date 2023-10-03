@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Store } from "../Datastore/AllStore";
-import { NavLink, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function Bollywood() {
