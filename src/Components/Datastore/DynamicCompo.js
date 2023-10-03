@@ -29,6 +29,7 @@ const DynamicCompo = () =>{
         navbar.style.display = "block"
     }
     const changeHandle = () =>{
+        window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return(
         <div id="componentDyn">  
@@ -95,11 +96,13 @@ const DynamicCompo = () =>{
     
         {data.filter((item) => (item.category === dRouteData) && (item.id % 3 ===1 || item.id % 3 === 0 || item.id % 3 === 2)).slice(0,3).map((item,index) =>{
             return(
-                <>
+               
                 <div className="more_siren">                   
-                <Link to={`${data.id}`}>
-                   
-                    <img src={item.image} alt="not found" className="story_img" onClick={changeHandle}/></Link>
+        
+                    <Link to={`${item.id}`} onClick={changeHandle}>
+                    <img src={item.image} alt="not found" className="story_img" onClick={changeHandle}/> 
+                    </Link>
+
                     <div id="siren_story">
                         <h1 className="story_head">{item.heading}</h1>
                     </div>
@@ -114,7 +117,7 @@ const DynamicCompo = () =>{
                     </div>
                     
                 </div>
-                </>
+               
             )
         })}
         </div>

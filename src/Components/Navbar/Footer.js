@@ -10,8 +10,10 @@ import email from "../Images/email.png"
 
 
 const FooterCompo = () =>{
+    const navbar = document.getElementById('Header')
     const handleclick = () =>{
         window.scrollTo({top: 0, behavior: 'smooth'})
+        navbar.style.display = "block"
     }
     return(
         <div id="footer">

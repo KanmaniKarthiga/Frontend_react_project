@@ -54,7 +54,7 @@ hr{
 }
 /* #############################3 */
 #home{
-  max-height: 350vh;
+  margin-bottom: -220px;
 }
 #homecompo1{
   display: flex;
@@ -457,21 +457,6 @@ li{
   padding-left: 10px;
 
 }
-/* .componentH{
-  max-height: 420vh;
-}
-.component{
-  max-height: 400vh;
-}
-.componentT{
-  max-height: 350vh;
-}
-.componentFit{
-  max-height: 400vh;
-}
-.componentF{
-  max-height: 430vh;
-} */
 .icon{
   width: 25px;
   height: 25px;
@@ -548,10 +533,13 @@ li{
   }
 
   /* ################## */
+  #home{
+    margin-bottom: 315px;
+  }
   .homecompo1{
     display: flex;
     margin-bottom: 20%;
-    
+  
   }
   #homecompo2,  #homehr{
     margin-left: 0px;
@@ -562,18 +550,18 @@ li{
     margin-left: -140px;
   }
   #homeimg2{
-    width: 250px;
+    width: auto;
     height: 150px;
-    position: absolute;
-    top: 14em;
-    left: 27em;
+    position: relative;
+    top: 1.8em;
+    left: 35%;
   }
   #homeimg3{
-    width: 250px;
+    width: auto;
     height: 150px;
-    position: absolute;
-    top: 385px;
-    left: 27em;
+    position: relative;
+    top: 12em;
+    left: -15%;
   }
   .imagehome{
     width: 200px;
@@ -724,6 +712,9 @@ li{
   }
   
   /* ############################ */
+  #home{
+    margin-bottom: 85%;
+  }
   #homeimg1{
     position: relative;
     top: 30px;
@@ -951,7 +942,7 @@ li{
   }
   /* ############################ */
   #home{
-    min-height: 500vh;
+    margin-bottom: 75%;
   }
   #homeimg1{
     position: relative;

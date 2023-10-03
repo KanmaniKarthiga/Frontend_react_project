@@ -736,19 +736,7 @@ function AllStore(){
             // description:"Leaks reveal launch date, price, sale, design, specifications.iPhone 15 series is tipped to launch on September 12, next month.",
             content:"The standard iPhone 15 lineup has upgraded 48MP Main Cameras, a USB 2.0 Type C port, and the Dynamic Island. The external design didn't change much, but there's a lot to love about these new models, and there's still a mute switch.Apple revealed the iPhone 15 lineup during the Wonderlust event on September 12, 2023. The two standard models received multiple updates that brought them closer to an iPhone 14 Pro, but still not quite 'pro'.There have been two tiers of iPhone since the iPhone 11 lineup with a separation between standard and pro models. How these tiers are separated has changed over time, but Apple tends to reserve its latest and most premium features for the pros.",
             category:"ToppostsHome",
-        },{
-            id:97,
-            image:"",
-            heading:"",
-            description:"",
-            category:"",
-        },{
-            id:98,
-            image:"",
-            heading:"",
-            description:"",
-            category:"",
-        },
+        }
 
     ])
     return(
@@ -762,6 +750,7 @@ function AllStore(){
                     <Route path='/Fitness' element={<Fitness/>}></Route>
                     <Route path='/Food' element={<Food/>}></Route>
                     <Route path='/dynamiccompo/:id' element={<DynamicCompo/>}/>
+                    <Route path='/dynamiccompo/:id/:id' element={<DynamicCompo/>}/>
                 </Routes>   
         </div>
         </Store.Provider>
