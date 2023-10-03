@@ -15,6 +15,10 @@ const FooterCompo = () =>{
         window.scrollTo({top: 0, behavior: 'smooth'})
         navbar.style.display = "block"
     }
+    const changeHandle = () =>{
+        window.scrollTo({top: 0, behavior: 'smooth'})
+        // navbar.style.display = "block"
+    }
     return(
         <div id="footer">
             <div style={{color:"white"}} className="media_siren">
@@ -28,11 +32,11 @@ const FooterCompo = () =>{
             <div>                
                 <ul type="none">
                     <h2 className="footerlink">Explore</h2>
-                    <Link to='/bollywood' className="footerlink" onClick={handleclick}><li>Bollywood</li></Link>
-                    <Link to='/technology' className="footerlink" onClick={handleclick}><li>Technology</li></Link>
-                    <Link to='/hollywood' className="footerlink" onClick={handleclick}><li>Hollywood</li></Link>
-                    <Link to='/fitness'className="footerlink" onClick={handleclick}><li>Fitness</li></Link>
-                    <Link to='/food' className="footerlink" onClick={handleclick}><li>Food</li></Link> 
+                    <Link to='/bollywood' className="footerlink" onClick={changeHandle}><li>Bollywood</li></Link>
+                    <Link to='/technology' className="footerlink" onClick={changeHandle}><li>Technology</li></Link>
+                    <Link to='/hollywood' className="footerlink" onClick={changeHandle}><li>Hollywood</li></Link>
+                    <Link to='/fitness'className="footerlink" onClick={changeHandle}><li>Fitness</li></Link>
+                    <Link to='/food' className="footerlink" onClick={changeHandle}><li>Food</li></Link> 
                 </ul>
             </div>
             <div>
