@@ -494,6 +494,9 @@ li{
 
 /* ##########Tab######### */
 @media (min-width: 700px) and (max-width: 1200px){
+  #root{
+    height: 100vh;
+  }
   #baseContainer{
     width: auto;
     display: block;
@@ -514,14 +517,12 @@ li{
     margin-left: 0px;
   }
   #block2{
-    width: 50%;
+    width: 100%;
     align-items: center;
     float: left;
   }
   .adbox{
-    position: relative;
-    left: 90%;
-    top: -655px;
+    display: none;
   }
   .container1{
     justify-content: center;
@@ -534,7 +535,7 @@ li{
   }
   
   #footer{
-    position: relative;
+    position: sticky;
     left: 0px;
     bottom: 0px;
   }
@@ -564,7 +565,7 @@ li{
     position: relative;
     left: -7em;
     top: 55em;
-    width: 140px;
+    width: 190px;
   }
   #latestArticles{
     justify-content: center;
