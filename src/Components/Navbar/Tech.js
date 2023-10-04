@@ -58,9 +58,9 @@ function Tech(){
                         </>
                         )
                     })}
-            <div>
+            
                 <img src="https://undone.com/cdn/shop/files/Labcraft_-_Banner_teasing_4_A_Mobile_720x.gif?v=1690518767" alt='Not found' className="adbox"/>                                
-            </div>
+            
         </div>
         </div>
         <div id="block3T">

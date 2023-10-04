@@ -56,29 +56,27 @@ hr{
 #home{
   margin-bottom: -220px;
 }
-#homecompo1{
+.homecompo1{
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.homecompo1_2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 #homeimg1{
-  position: relative;
-  top: 30px;
-  left: 150px;
-  width: 650px;
-  height: 420px;
+  width: 50%;
   border-radius: 5px;
 }
 #homeimg2{
-  position: absolute;
-  top: 225px;
-  left: 51em;
   width: 350px;
   height: 200px;
   border-radius: 5px;
 }
 #homeimg3{
-  position: absolute;
-  top: 435px;
-  left: 51em;
   width: 350px;
   height: 210px;
   border-radius: 5px;
@@ -136,9 +134,9 @@ hr{
   width: 65%;
 }
 .homead{
-  width: 70%;
+  width: 75%;
   height: 70%;
-  margin-left: -55px;
+  margin-left: -100px;
 }
 #homeBlock{
   width: 45%;
@@ -158,7 +156,7 @@ hr{
 #ho_img{
   position: relative;
   top: -305px;
-  left: 12.5%;
+  left: 12%;
   width: 580px;
   height: 300px;
 }
@@ -503,6 +501,9 @@ li{
   #Header{
     width: 100%;
   }
+  .header,  #hrhead{
+    margin-left: 30px;
+  }
   #block1{
     margin-left: 0px;
   }
@@ -513,17 +514,23 @@ li{
     margin-left: 0px;
   }
   #block2{
-    width: 60%;
-    position: relative;
-    left: -380px;
+    width: 50%;
+    align-items: center;
+    float: left;
   }
   .adbox{
-    position: absolute;
+    position: relative;
     left: 90%;
-    top: 8%;
+    top: -655px;
+  }
+  .container1{
+    justify-content: center;
   }
   #block3, #block3T, #block3F{
     display: none;
+  }
+  #time{
+    margin-top: 0px;
   }
   
   #footer{
@@ -534,7 +541,7 @@ li{
 
   /* ################## */
   #home{
-    margin-bottom: 315px;
+    margin-bottom: 20px;
   }
   .homecompo1{
     display: flex;
@@ -544,25 +551,7 @@ li{
   #homecompo2,  #homehr{
     margin-left: 0px;
   }
-  #homeimg1{
-    width: 400px;
-    height: 310px;
-    margin-left: -140px;
-  }
-  #homeimg2{
-    width: auto;
-    height: 150px;
-    position: relative;
-    top: 1.8em;
-    left: 35%;
-  }
-  #homeimg3{
-    width: auto;
-    height: 150px;
-    position: relative;
-    top: 12em;
-    left: -15%;
-  }
+
   .imagehome{
     width: 200px;
   }
@@ -570,14 +559,15 @@ li{
     width: 100%;
     flex-wrap: nowrap;
     margin-left: 0px;
-    position: relative;
-    top: 30%;
   }
-  .homead{
+  .homead{ 
     position: relative;
-    top: 55em;
     left: -7em;
+    top: 55em;
     width: 140px;
+  }
+  #latestArticles{
+    justify-content: center;
   }
   #imagecontainer{
     width: 10%;
@@ -598,9 +588,11 @@ li{
 
   }
   #homeBlock{
-    margin-left: 0px;
-    position: relative;
-    top: 16em;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .homeTop-posts, #hrhead_home{
+    margin-left: 30px;
   }
   .topposts{
     width: 200px;
@@ -706,36 +698,35 @@ li{
   .adbox{
     display: none;
   }
-  .container1{
-    display: block;
+  .container1, .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
-  
+  #block2{
+    display: flex;
+    align-items: center;
+  }
+  .contentContainer{
+    width: 70%;
+    
+  }
+  .imageCorner{
+    width: 170px;
+  }
   /* ############################ */
   #home{
     margin-bottom: 85%;
   }
+  .homecompo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #homeimg1{
-    position: relative;
-    top: 30px;
-    left: 5px;
-    width: 100%;
-    height: 50%;
-    border-radius: 5px;
-  }
-  #homeimg2{
-    position: relative;
-    top: 35px;
-    left: 6px;
-    width: 100%;
-    border-radius: 5px;
-  }
-  #homeimg3{
-    position: relative;
-    top: 40px;
-    left: 6px;
-    width: 100%;
-    border-radius: 5px;
+    height: 200px;
+    width: 93%;
   }
   #homecompo2{
     font-size: 30px;
@@ -747,6 +738,7 @@ li{
   .containerHome{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-left: 0px;
   }
@@ -759,7 +751,6 @@ li{
     width: 100%;
     position: relative;
     top: 18em;
-    left: 20px;
     margin-left: 0px;
   }
   .homeTop-posts, #hrhead_home{
@@ -770,8 +761,8 @@ li{
   }
    #latestArticles{
     width: 100%;
+    justify-content: center;
     margin-top: 20px;
-    margin-left: 20px;
    }
    .homead{
     display: none;
@@ -826,10 +817,13 @@ li{
     width: 100vw;
   }
   #dynamic_block{
-    width: 100%;
+    width: 99%;
     min-height: 130vh;
     position: relative;
-    left: 5px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .social_media{
     margin-left: 25px;
@@ -856,13 +850,7 @@ li{
     width: 100%;
     background-color: white;
   }
-  .story_head{
-    width: 300px;
-    margin-left: -55px;
-  }
-  .story_img{
-    margin-left: -55px;
-  }
+  
   #media_story{
     display: none;
   }
@@ -871,6 +859,13 @@ li{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+  }
+  .more_siren{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    width: 100%;
   }
   /* ########################### */
   #footer{
@@ -936,35 +931,35 @@ li{
   .adbox{
     display: none;
   }
-  .container1{
-    display: block;
+  .container1, .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+  }
+  #block2{
+    display: flex;
+    align-items: center;
+  }
+  .contentContainer{
+    width: 70%;
+    
+  }
+  .imageCorner{
+    width: 170px;
   }
   /* ############################ */
   #home{
     margin-bottom: 75%;
   }
+  .homecompo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #homeimg1{
-    position: relative;
-    top: 30px;
-    left: 5px;
-    width: 100%;
-    height: 50%;
-    border-radius: 5px;
-  }
-  #homeimg2{
-    position: relative;
-    top: 35px;
-    left: 6px;
-    width: 100%;
-    border-radius: 5px;
-  }
-  #homeimg3{
-    position: relative;
-    top: 40px;
-    left: 6px;
-    width: 100%;
-    border-radius: 5px;
+    height: 200px;
+    width: 93%;
   }
   #homecompo2{
     font-size: 30px;
@@ -976,6 +971,7 @@ li{
   .containerHome{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-left: 0px;
   }
@@ -988,7 +984,6 @@ li{
     width: 100%;
     position: relative;
     top: 18em;
-    left: 20px;
     margin-left: 0px;
   }
   .homeTop-posts, #hrhead_home{
@@ -999,8 +994,8 @@ li{
   }
    #latestArticles{
     width: 100%;
+    justify-content: center;
     margin-top: 20px;
-    margin-left: 20px;
    }
    .homead{
     display: none;
@@ -1031,18 +1026,28 @@ li{
     width: auto;
   }
   .middle{
-    display: grid;
-    grid-template-columns: auto 140px 200px;
+    display: flex;
     width: 100%;
+    gap: 1px;
   }
   #dynamic_header{
     width: 100vw;
   }
   #dynamic_block{
-    width: 90%;
+    width: 99%;
     min-height: 130vh;
     position: relative;
-    left: 5px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .more_siren{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    width: 100%;
   }
   .social_media{
     margin-left: 25px;
@@ -1052,7 +1057,7 @@ li{
     height: 200px;
   }
   .dynamic_content{
-    width: 100vw;
+    width: 100%;
     font-size: 1em;
     text-align: justify;
   }
@@ -1062,20 +1067,23 @@ li{
   .story{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     background-color: white;
     
   }
-  .story_head{
-    width: 300px;
+  #siren_story{
+    width: 75%;
   }
   #media_story{
     display: none;
   }
   .Likes{
-    position: relative;
-    top: 16em;
+    position: absolute;
+    top: 65em;
+
+  }
+  .social_media{
+    margin-left: 0px;
   }
   /* ################## */
   #footer{

@@ -62,9 +62,9 @@ function Hollywood(){
                             </>
                             )
                         })}
-            <div>
+            
                 <img src="https://media.sailthru.com/composer/images/sailthru-prod-5xf/editor_images/2.11-SAT-JR-PM-copy-2_01.gif" alt='Not found' className="adbox"/>                                
-            </div>
+            
             </div>
         </div>
         <div id="block3">

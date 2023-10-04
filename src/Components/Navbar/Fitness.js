@@ -61,9 +61,9 @@ function Fitness(){
                             </>
                             )
                     })}
-            <div>
+            
                 <img src="https://media.tenor.com/UeIBKE3mLSYAAAAM/gym-health.gif" alt='Not found' className="adbox"/>                                
-            </div>
+            
             </div>
         </div>
         <div id="block3T">

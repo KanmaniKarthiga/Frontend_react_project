@@ -67,9 +67,9 @@ function Bollywood() {
                                 </>
                             )
                         })}
-                        <div>
+                        
                             <img src="https://www.talkingthreads.in/cdn/shop/articles/Single_Image_Ads_183_1024x.gif?v=1670418841" className="adbox" alt='Not found' />
-                        </div>
+                        
                     </div>
                 </div>
                 <div id="block3">

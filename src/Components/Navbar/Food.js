@@ -59,9 +59,9 @@ function Food(){
                         </>
                         )
                     })}
-                <div>
+                
                     <img src="https://www.rvadv.com/wp-content/uploads/2020/07/General-1080x1920-1.gif" alt='Not found' className="adbox"/>                                
-                </div>
+                
         </div>
         </div>
         <div id="block3F">
